@@ -17,7 +17,7 @@ import { format, startOfMonth, parseISO } from 'date-fns';
 
 type Expense = {
   id: string;
-  time: string;
+  time: string | Date;
   amount: number;
   category: string;
   account: string;
